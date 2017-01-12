@@ -41,6 +41,7 @@ Right now, it's not possible to instantiate a random sample set of agents - I pl
 ## Roadmap
 
 First, I'd like to work on the following issues:
+
 1. [Adding support for batch requests and handling pplapi throttling](https://github.com/rudimk/PyPplAPI/issues/1).
 2. [Creating random agent(s) by country](https://github.com/rudimk/PyPplAPI/issues/2).
 
