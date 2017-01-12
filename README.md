@@ -45,3 +45,6 @@ First, I'd like to work on the following issues:
 2. [Creating random agent(s) by country](https://github.com/rudimk/PyPplAPI/issues/2).
 
 Once that's taken care of - maybe I can look at clients in other languages. If you would like to see/improve something, file an issue. Better yet - fork, submit a PR.
+
+## License
+[Same ol' MIT](https://github.com/rudimk/PyPplAPI/blob/master/LICENSE).
