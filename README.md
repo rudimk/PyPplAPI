@@ -7,7 +7,7 @@ brilliant data points, and I figured having a Python wrapper around it made a lo
 
 And yes, true to my polyglot nature, I intend to write Go and Crystal wrappers too. Maybe Rust too, it's a fun language.
 
-## Installatioh
+## Installation
 
 Grab it off PyPI:
 ```pip install pypplapi```
