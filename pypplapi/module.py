@@ -1,4 +1,5 @@
 import requests as r
+import settings as s
 
 class Agent:
 
@@ -27,6 +28,21 @@ class Agent:
 
     def __init__(self):
         response = r.get('http://pplapi.com/random.json')
+        agent = self.__parse_response(response)
+        return self
+
+    def get_random_agent(self,country):
+
+        if country not in s.countries:
+            raise ValueError("Input country from : " + ",".join(s.countries))
+
+        response = r.get('http://pplapi.com/country/%s/random.json' % country)
+        agent = self.__parse_response(response)
+        return self 
+
+
+    def __parse_response(self,response):
+
         raw_data = response.json()
         self.agent_id = raw_data['id']
         self.agent_id_str = raw_data['id_str']
@@ -47,3 +63,5 @@ class Agent:
         self.extraversion = raw_data['extraversion']
         self.neuroticism = raw_data['neuroticism']
 
+    def __str__(self):
+        return str(self.agent_id)
